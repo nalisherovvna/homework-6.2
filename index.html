@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Swiper demo</title>
+  <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+</head>
+
+<body>
+
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <h1 class="crad1_h1">Projects and practice</h1>
+        <h5 class="card1_h5">01</h5>
+        <p class="card1_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat distinctio numquam neque
+          voluptatem,
+          provident ipsam fuga maiores! Cum aperiam nemo, nulla, veritatis veniam excepturi culpa cumque, laudantium
+          deleniti soluta obcaecati?</p>
+        <img class="img1" src="img/image.png" alt="flower">
+      </div>
+      <div class="swiper-slide">
+        <h1>Projects and practice</h1>
+        <h5 class="card2_h5">02</h5>
+        <p class="card1_p">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea illum explicabo aperiam a enim
+          blanditiis iure
+          laboriosam! Delectus, soluta labore provident odio accusamus quibusdam perferendis non quos. Corrupti, dolorum
+          cupiditate.</p>
+        <img class="img2" src="./img/5357238598543463677_120.jpg" alt="">
+      </div>
+      <div class="swiper-slide">
+        <h1 class="card3_h1">Projects and practice</h1>
+        <h5 class="card2_h5">03</h5>
+        <p class="card1_p">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto illo quia hic tempora itaque
+          beatae magni corrupti? Quia dolor in temporibus natus corrupti sed perferendis, recusandae dolore neque enim
+          vel!</p>
+          <img class="img3" src="./img/5357238598543463679_120.jpg" alt="">
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      pagination: {
+        el: ".swiper-pagination",
+        type: "progressbar",
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+</body>
+
+</html>
